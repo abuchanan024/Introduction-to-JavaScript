@@ -19,7 +19,7 @@ Do the following:
 
    HINT: no function required
 */
-votingAge = 18
+var votingAge = 18
 
 console.log(votingAge);
 
@@ -196,7 +196,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-return cm * 0.0328084
+return cm / 30.48;
 };
 console.log(feet(1000));
 
@@ -232,9 +232,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(num){
+  if(num >= 90 && num < 100){
+    return 'you got an A';
+  } else if(num >= 80 && num <= 89){
+    return 'you got a B';
+  } else if (num >= 70 && num <=79){
+    return 'you got a C';
+  } else if( num >=60 && num <= 69){
+    return 'you got a D';
+  } else if(num < 60){
+    return 'you got an F';
+  }
 }
+
+console.log(grade(79))
 
 
 
