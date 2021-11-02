@@ -86,9 +86,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
-}
+function dogYears(humanYears){
+  return humanYears * 7
+};
+console.log(dogYears(1));
 
 
 
@@ -178,9 +179,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
-}
+function miles(km){
+  return km * 1.60934
+};
+
+console.log(miles(5));
 
 
 
