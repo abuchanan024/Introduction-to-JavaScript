@@ -137,7 +137,7 @@ function hungryDog(weight, age){
      return weight * 0.10;
    }
 }
-console.log(hungryDog(15,1))
+console.log(hungryDog(23,1))
 
 
 
@@ -163,7 +163,7 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+
 }
 
 
@@ -195,9 +195,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
-}
+function feet(cm){
+return cm * 0.0328084
+};
+console.log(feet(1000));
 
 
 
