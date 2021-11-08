@@ -21,8 +21,10 @@ Do the following:
 */
 var votingAge = 18
 
-console.log(votingAge);
 
+if(votingAge >= 18){
+console.log(true);
+}
 
 /*
 Task 1b - Values
@@ -35,9 +37,10 @@ Do the following:
    HINT: no function required
 */
 const fir = 5;
-const sec = fir;
-
-console.log(sec);
+const sec = 10;
+if ( sec >= 15){
+sec += 1;
+}
 
 
 
@@ -162,10 +165,40 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+var computerChoice = Math.floor(Math.random*4);
+var userChoice = Math.floor(Math.random*4);
+
+
 function game(user, computer){
+  computer = computerChoice
+  user = userChoice
+  const rock = 1;
+  const paper = 2;
+  const scissors = 3;
 
-}
-
+  if (user === rock && computer === paper){
+    console.log('You lose!');
+  } else if( user === rock && computer === rock){
+    console.log('It\'s a tie' );
+  } else if( user === rock && computer === scissors){
+    console.log('You win!');
+  } else if( user === paper && computer === rock){
+    console.log('You win!');
+  } else if(user === paper && computer === paper){
+    console.log('It\'s a tie');
+  } else if(user === paper && computer === scissors){
+    console.log('You lose!');
+  } else if(user === scissors && computer === paper){
+    console.log('You win!');
+  } else if(user === scissors && computer === rock){
+    console.log('You lose!');
+  } else if(user === scissors && computer === scissors){
+    console.log('It\'s a tie');
+  } else {
+    console.log('Let\'s play!');
+  }
+};
+game(2,1)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
